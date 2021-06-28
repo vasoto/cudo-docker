@@ -19,6 +19,5 @@ docker --gpus all -d --rm --name cudo cudominer
 2. Set organization
 
 ```bash
-docker exec -it cudo bash
->cudominercli login <ORG_NAME>
+docker exec -it cudo cudominercli login <ORG_NAME>
 ```
