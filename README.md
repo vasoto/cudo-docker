@@ -13,7 +13,7 @@ docker build -t cudominer .
 1. Run the container
 
 ```
-docker --gpus all -d --rm --name cudo cudominer
+docker run --gpus all -d --rm --name cudo cudominer
 ```
 
 2. Set organization
