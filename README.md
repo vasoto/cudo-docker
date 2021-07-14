@@ -13,11 +13,13 @@ docker build -t cudominer .
 1. Run the container
 
 ```
-docker run --gpus all -d --rm --name cudo cudominer
+docker run --gpus all -d --rm -h <LABEL> --name cudo cudominer
 ```
+
+Set `<LABEL>` to distinguish your workers from one another.
 
 2. Set organization
 
 ```bash
-docker exec -it cudo cudominercli login <ORG_NAME>
+docker exec -it cudo cudominercli login <ORGANIZATION_NAME>
 ```
